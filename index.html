@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Explorers - Learn Artificial Intelligence through fun lessons and quizzes for kids aged 6-12.">
+  <meta name="theme-color" content="#6C5CE7">
+  <title>AI Explorers 🤖 | Learn AI. Play. Discover. Create!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#/" class="brand" aria-label="AI Explorers home">
+        <span class="brand-logo" aria-hidden="true">🤖</span>
+        <span class="brand-text">AI&nbsp;<em>Explorers</em></span>
+      </a>
+      <nav class="mainnav" id="mainnav" aria-label="Main navigation">
+        <a href="#/" data-nav="home">🏠 Home</a>
+        <a href="#/learn" data-nav="learn">📚 Learn</a>
+        <a href="#/progress" data-nav="progress">⭐ My Progress</a>
+      </nav>
+      <div class="topbar-actions">
+        <div class="xp-pill" id="xp-pill" title="Your XP points">
+          <span aria-hidden="true">⚡</span><b id="xp-value">0</b><small>XP</small>
+        </div>
+        <button class="icon-btn" id="sound-toggle" type="button" aria-label="Toggle sounds" title="Sound on/off">
+          <span id="sound-icon">🔔</span>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainnav">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span aria-hidden="true">🤖</span> AI Explorers
+        <p>Made with 💜 for young inventors. Learn AI safely and have fun!</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#/">Home</a>
+        <a href="#/learn">Learn</a>
+        <a href="#/progress">My Progress</a>
+      </nav>
+    </div>
+    <p class="footer-note">🔒 No accounts, no ads, no tracking. Everything stays on this device.</p>
+  </footer>
+
+  <div id="toast-root" aria-live="polite"></div>
+  <div id="confetti-root" aria-hidden="true"></div>
+
+  <script src="js/audio.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
